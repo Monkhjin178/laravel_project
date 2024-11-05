@@ -2,7 +2,7 @@
 @section('content')
     <form action="{{ route('store') }}" method="POST">
         @csrf
-
+        <a href="{{route('index') }}" class="btn btn-primary">back</a>
         <div class="mb-3">
             <label for="" class="form-label">Name</label>
             <input type="text" name="name" class="form-control">

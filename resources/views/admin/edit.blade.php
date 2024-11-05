@@ -3,6 +3,7 @@
    <form action="{{route ('update' ,$product->id)}}"  method = "POST">
     @csrf
     @method('PUT')
+    <a href="{{route('index') }}" class="">back</a>
     <div class="mb-3">
         <label >name</label>
         <input type="text" name="name" class="from-control" value="{{$product->name}}">

@@ -9,6 +9,7 @@ Route::controller(PageController::class)->group(function () {
     Route::post('/product/create', 'store')->name("store");
     Route ::get ('/product/{id}/edit','edit')->name("edit");
     Route:: put('product/{id}/update','update')->name("update");
+    
 });
 
 
